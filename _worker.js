@@ -8322,7 +8322,7 @@ function buildSingBoxChainOutbound(chainProxyParams) {
     detour: ""
   };
   if (security === "tls" || security === "reality") {
-    const tlsAlpns = alpn ? alpn?.split(",").filter((value) => value !== "h2") : [];
+    const tlsAlpns = alpn ? alpn?.split(",").filter((value) => value !== "h3") : [];
     chainOutbound.tls = {
       enabled: true,
       server_name: sni,
